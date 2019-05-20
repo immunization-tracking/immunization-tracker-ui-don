@@ -9,16 +9,15 @@ class Carousel {
 		});
 		this.currentSlideIndex = 0;
 		this.slideTotalCount = carouselSlides.length;
-		const buttons = document.querySelectorAll(`#carouselTeam a`);
-		console.log(buttons);
-		buttons.forEach(button =>
+		const carouselControls = document.querySelectorAll(`#carouselTeam a`);
+		carouselControls.forEach(button =>
 			button.addEventListener('click', e => {
 				this.changeSlide(e);
 			}),
 		);
 	}
 	changeSlide(e) {
-		let direction = e.target.dataset.control;
+		const direction = e.target.dataset.control;
 		this.carouselPosition[this.currentSlideIndex].deSelect();
 		if (direction === 'next') {
 			this.currentSlideIndex === this.slideTotalCount - 1
