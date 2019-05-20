@@ -9,71 +9,104 @@
   <title>Immunization Tracker</title>
 </head>
 
-<body>
+<body class="bg-light">
   <section>
-    <h3>Immunization Tracker</h3>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>For Parents</li>
-        <li>For Clinics</li>
-      </ul>
-      <button>Login</button>
-      <button>Sign Up</button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-gradient-dark fixed-top">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+          data-target="#it-navbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="it-navbar">
+          <a href="" class="navbar-brand"><strong class="text-center">Immunization Tracker</strong></a>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Parents</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Clinics</a></li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href=""
+                class="nav-link btn btn-outline-secondary text-light mb-2 mb-md-0 mr-md-2">Log In</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link btn btn-secondary text-light">Register</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </section>
-  <div>
-    <!--Container-->
-    <header>
-      <h1>Immunization Tracker</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tenetur nesciunt quibusdam labore id, possimus
+
+
+  <header class="content-header">
+    <div class="container p-5 text-center">
+      <h1 class="text-center text-primary">Immunization<br>Tracker</h1>
+      <p class="lead text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tenetur nesciunt
+        quibusdam labore
+        id, possimus
         alias, eius delectus libero rerum aliquid provident quia quidem ab, quasi laudantium odio voluptates doloribus!
       </p>
-    </header>
-    <section>
+      <button class="btn btn-lg  btn-secondary btn-lg-outline-secondary">Sign Up For Free!</button>
+    </div>
+  </header>
+  <div class="container">
+    <!--Container-->
+    <section class="content-section border-bottom text-center">
       <!--Call to Action-->
       <h2>Information at your finger tips</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis error reprehenderit voluptas laudantium, illum
+      <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis error reprehenderit voluptas
+        laudantium, illum
         eum, libero veniam molestiae, aperiam fugiat quia neque quisquam atque praesentium debitis aliquam? Dolorem,
         facere incidunt.</p>
-      <button>Sign Up For Free!</button>
+      <button class="btn btn-lg btn-secondary">Sign Up For Free!</button>
     </section>
-    <section>
+    <section class="content-section border-bottom">
       <!--Two Columns, one for Parent Features, one for Clinic Features-->
-      <div>
+      <div class="row border-bottom">
         <!--Left Column-->
-        <h3>Parents</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
-          architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
-          autem, consequatur fugiat?</p>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
+        <div class="col-md-6 border-right p-3">
+          <h3>Parents</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
+            architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
+            autem, consequatur fugiat?</p>
+          <ul>
+
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+          </ul>
+        </div>
+        <div class="col-md-6 p-3">
+          <img src="imgs/thiago-cerqueira-191866-unsplash.jpg" alt="Mom holding baby up in the air"
+            class="img-fluid rounded">
+        </div>
       </div>
-      <div>
+      <div class="row">
+        <div class="col-md-6 border-right p-3">
+          <img src="imgs/adult-career-clipboard-1919236.jpg" alt="Person holding Clipboard" class="img-fluid rounded">
+        </div>
         <!--Right Column-->
-        <h3>Clinics</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
-          architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
-          autem, consequatur fugiat?</p>
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
+        <div class="col-md-6 p-3">
+          <h3>Clinics</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
+            architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
+            autem, consequatur fugiat?</p>
+          <ul>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section>
+    <section class="content-section center text-center">
       <!--Why Us-->
-      <h3>Why choose Us</h3>
+      <h3>Have a suggestion?</h3>
+      <p class="lead">We would love to hear from you. Click <a href="noone@noone.com" class="text-info">here</a> to send
+        us an email!</p>
     </section>
 
   </div>
-  <footer>
+  <footer class="bg-dark text-light text-center">
     &copy 2019, All rights reserved.
   </footer>
   <script src="js/vendor/jQuery/jquery.min.js"></script>
