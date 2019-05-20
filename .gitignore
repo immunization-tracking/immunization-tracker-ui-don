@@ -66,3 +66,6 @@ typings/
 /scss/utilities/*
 /scss/vendor/*
 /js/vendor/*
+
+# vscode
+.vscode
