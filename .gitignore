@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# bootstrap
+/scss/_*
+/scss/mixins/*
+/scss/utilities/*
+/scss/vendor/*
+/js/vendor/*
+
+# vscode
+.vscode
