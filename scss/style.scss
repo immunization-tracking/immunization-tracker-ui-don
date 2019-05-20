@@ -82,3 +82,37 @@ $enable-shadows: true;
 $enable-gradients: true;
 
 @import 'bootstrap';
+
+.content-header {
+	min-height: 30rem;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: auto;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 100%),
+		url('../imgs/arvin-chingcuangco-1337417-unsplash.jpg');
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media (min-width: 992px) {
+		height: 100vh;
+		h1 {
+			font-size: 4rem;
+			margin: 0;
+			margin-bottom: 25rem;
+
+			padding: 0;
+			@media (min-width: 992px) {
+				font-size: 5.5rem;
+			}
+		}
+	}
+}
+
+.content-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
