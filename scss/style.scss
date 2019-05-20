@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Bergamo Std';
+	src: local('☺'), url('/fonts/BergamoStd-Regular.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bergamo Std';
+	src: local('☺'), url('/fonts/BergamoStd-Italic.woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Bergamo Std';
+	src: local('☺'), url('/fonts/BergamoStd-Bold.woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bergamo Std';
+	src: local('☺'), url('/fonts/BergamoStd-BoldItalic.woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Hattori Hanzo';
+	src: local('☺'), url('/fonts/Hattori_Hanzo.woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hattori Hanzo';
+	src: local('☺'), url('/fonts/Hattori_Hanzo_Italic.woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Cursor';
+	src: local('☺'), url('/fonts/texgyrecursor-regular.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Cursor';
+	src: local('☺'), url('/fonts/texgyrecursor-italic.woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Cursor';
+	src: local('☺'), url('/fonts/texgyrecursor-bold.woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Cursor';
+	src: local('☺'), url('/fonts/texgyrecursor-bolditalic.woff');
+	font-weight: 700;
+	font-style: italic;
+}
+// Color Palette
+
+$primary: #0acf00;
+$secondary: #ff7100;
+$light: #fbf7f5;
+$dark: #222222;
+
+$font-family-sans-serif: "Bergamo Std", "Baskerville", "Hoefler Text", "Palatino", "Georgia", "Times New Roman", serif;
+$font-family-monospace: "TeX Gyre Cursor", Menlo, Courier New, Courier, Mono, monospace;
+$headings-font-family: "Hattori Hanzo", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif;
+
+$enable-shadows: true;
+$enable-gradients: true;
+
+@import 'bootstrap';
