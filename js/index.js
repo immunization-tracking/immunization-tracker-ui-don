@@ -18,7 +18,7 @@ class Carousel {
 	}
 	changeSlide(e) {
 		const direction = e.target.dataset.control;
-		this.carouselPosition[this.currentSlideIndex].deSelect();
+		const previousIndex = this.currentSlideIndex;
 		if (direction === 'next') {
 			this.currentSlideIndex === this.slideTotalCount - 1
 				? (this.currentSlideIndex = 0)
@@ -29,6 +29,7 @@ class Carousel {
 				: (this.currentSlideIndex = this.currentSlideIndex - 1);
 		}
 		this.carouselPosition[this.currentSlideIndex].select();
+		this.carouselPosition[previousIndex].deSelect();
 	}
 }
 
@@ -54,10 +55,20 @@ class CarouselContent {
 		this.content = content;
 	}
 	deSelect() {
-		this.content.classList.remove(`active`);
+		this.content.classList.remove('active');
 	}
 	select() {
+		this.addAnimation('vanishIn');
 		this.content.classList.add(`active`);
+		setTimeout(() => {
+			this.removeAnimation('vanishIn');
+		}, 1000);
+	}
+	addAnimation(animationClassName) {
+		this.content.classList.add('magictime', animationClassName);
+	}
+	removeAnimation(animationClassName) {
+		this.content.classList.remove('magictime', animationClassName);
 	}
 }
 
