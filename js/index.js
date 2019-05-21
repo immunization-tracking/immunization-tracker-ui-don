@@ -53,9 +53,13 @@ class CarouselIndicator {
 class CarouselContent {
 	constructor(content) {
 		this.content = content;
+		this.data = this.content.dataset.content;
+		this.link = document.querySelector(`.links[data-link="${this.data}"]`);
+		this.carouselLinks = new CarouselLinks(this.link);
 	}
 	deSelect() {
 		this.content.classList.remove('active');
+		this.carouselLinks.deSelect();
 	}
 	select() {
 		this.addAnimation('vanishIn');
@@ -63,12 +67,35 @@ class CarouselContent {
 		setTimeout(() => {
 			this.removeAnimation('vanishIn');
 		}, 1000);
+		this.carouselLinks.select();
 	}
 	addAnimation(animationClassName) {
 		this.content.classList.add('magictime', animationClassName);
 	}
 	removeAnimation(animationClassName) {
 		this.content.classList.remove('magictime', animationClassName);
+	}
+}
+
+class CarouselLinks {
+	constructor(links) {
+		this.links = links;
+	}
+	deSelect() {
+		this.links.classList.remove('selected');
+	}
+	select() {
+		this.addAnimation('foolishIn');
+		this.links.classList.add('selected');
+		setTimeout(() => {
+			this.removeAnimation('foolishIn');
+		}, 1000);
+	}
+	addAnimation(animationClassName) {
+		this.links.classList.add('magictime', animationClassName);
+	}
+	removeAnimation(animationClassName) {
+		this.links.classList.remove('magictime', animationClassName);
 	}
 }
 
