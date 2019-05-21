@@ -9,17 +9,16 @@ class Carousel {
 		});
 		this.currentSlideIndex = 0;
 		this.slideTotalCount = carouselSlides.length;
-		const buttons = document.querySelectorAll(`#carouselTeam a`);
-		console.log(buttons);
-		buttons.forEach(button =>
+		const carouselControls = document.querySelectorAll(`#carouselTeam a`);
+		carouselControls.forEach(button =>
 			button.addEventListener('click', e => {
 				this.changeSlide(e);
 			}),
 		);
 	}
 	changeSlide(e) {
-		let direction = e.target.dataset.control;
-		this.carouselPosition[this.currentSlideIndex].deSelect();
+		const direction = e.target.dataset.control;
+		const previousIndex = this.currentSlideIndex;
 		if (direction === 'next') {
 			this.currentSlideIndex === this.slideTotalCount - 1
 				? (this.currentSlideIndex = 0)
@@ -30,6 +29,7 @@ class Carousel {
 				: (this.currentSlideIndex = this.currentSlideIndex - 1);
 		}
 		this.carouselPosition[this.currentSlideIndex].select();
+		this.carouselPosition[previousIndex].deSelect();
 	}
 }
 
@@ -53,12 +53,49 @@ class CarouselIndicator {
 class CarouselContent {
 	constructor(content) {
 		this.content = content;
+		this.data = this.content.dataset.content;
+		this.link = document.querySelector(`.links[data-link="${this.data}"]`);
+		this.carouselLinks = new CarouselLinks(this.link);
 	}
 	deSelect() {
-		this.content.classList.remove(`active`);
+		this.content.classList.remove('active');
+		this.carouselLinks.deSelect();
 	}
 	select() {
+		this.addAnimation('vanishIn');
 		this.content.classList.add(`active`);
+		setTimeout(() => {
+			this.removeAnimation('vanishIn');
+		}, 1000);
+		this.carouselLinks.select();
+	}
+	addAnimation(animationClassName) {
+		this.content.classList.add('magictime', animationClassName);
+	}
+	removeAnimation(animationClassName) {
+		this.content.classList.remove('magictime', animationClassName);
+	}
+}
+
+class CarouselLinks {
+	constructor(links) {
+		this.links = links;
+	}
+	deSelect() {
+		this.links.classList.remove('selected');
+	}
+	select() {
+		this.addAnimation('foolishIn');
+		this.links.classList.add('selected');
+		setTimeout(() => {
+			this.removeAnimation('foolishIn');
+		}, 1000);
+	}
+	addAnimation(animationClassName) {
+		this.links.classList.add('magictime', animationClassName);
+	}
+	removeAnimation(animationClassName) {
+		this.links.classList.remove('magictime', animationClassName);
 	}
 }
 

@@ -61,10 +61,8 @@ typings/
 .next
 
 # bootstrap
-/scss/_*
-/scss/mixins/*
-/scss/utilities/*
-/scss/vendor/*
+/scss/bootstrap/*
+/scss/magic/*
 /js/vendor/*
 
 # vscode

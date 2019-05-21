@@ -81,7 +81,8 @@ $headings-font-family: "Hattori Hanzo", "Helvetica", "Arial", "Lucida Grande", "
 $enable-shadows: true;
 $enable-gradients: true;
 
-@import 'bootstrap';
+@import 'bootstrap/bootstrap';
+@import 'magic/magic';
 
 .content-header {
 	min-height: 30rem;
@@ -115,4 +116,12 @@ $enable-gradients: true;
 .content-section {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
+}
+
+.links {
+	display: none;
+}
+
+.selected {
+	display: block;
 }
