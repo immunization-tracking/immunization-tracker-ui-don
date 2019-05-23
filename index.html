@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="it-navbar">
           <a href="" class="navbar-brand"><strong class="text-center">Immunization Tracker</strong></a>
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="/immunization-tracker-ui-don/" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           </ul>
           <ul class="navbar-nav">
@@ -36,7 +36,7 @@
   <header class="content-header">
     <div class="container p-5 text-center">
       <h1 class="text-center text-primary">Immunization<br>Tracker</h1>
-      <h4 class="lead">A simple app for the Parents on the go!</h4>
+      <h4 class="lead mb-2">A simple app for parents on the go!</h4>
       <button class="btn btn-lg  btn-secondary btn-lg-outline-secondary">Sign Up For Free!</button>
     </div>
   </header>
@@ -53,19 +53,17 @@
     <section class="content-section border-bottom">
       <h2 class="text-center mb-4">Features</h2>
       <div class="row border-bottom">
-
-        <!--Left Column-->
+        <!-- Left Column-->
         <div class="col-md-6 border-right p-3">
           <h3 class="text-center">Parents</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
             architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
             autem, consequatur fugiat?</p>
           <ul>
-
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>Immunization Tracker has the ability to keep track of when your childred are due for their next immunization.</li>
+            <li>Immunization records are kept up to date by your healthcare provider and can be requested at any time.</li>
+            <li>Get reminders when immunizations are due.</li>
+            <li><a href="" class="btn btn-sm btn-secondary">Register</a> for free today!</li>        
           </ul>
         </div>
         <div class="col-md-6 p-3">
@@ -80,24 +78,44 @@
         </div>
         <!--Right Column-->
         <div class="col-md-6 p-3">
-          <h3 class="text-center">Clinics</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus recusandae, porro dignissimos
-            architecto illum excepturi cumque id quo tenetur similique quis possimus, optio dolorum accusantium nostrum
-            autem, consequatur fugiat?</p>
+          <h3 class="text-center">Ease of Access</h3>
+          <p class="text-center lead">For Healthcare Providers</p>
           <ul>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
-            <li>lorem</li>
+            <li>A centralized dashboard to see all incoming requests from patients.</li>
+            <li>Able to approve/deny requests based on if patient has been seen by the practice.</li>
+            <li>Send notes to the patient reminding them of any upcoming appointments or missing immunizations.</li>
+            <li>All information being stored is secured and encrypted to protect patient privacy.</li>
+            <li><a href="" class="btn btn-sm btn-secondary">Register</a> for free today!</li>
           </ul>
         </div>
       </div>
     </section>
     <section class="content-section center text-center">
       <!--Why Us-->
-      <h3>Have a suggestion?</h3>
-      <p class="lead">We would love to hear from you. Click <a href="noone@noone.com" class="text-info">here</a> to send
-        us an email!</p>
+      <h3>Have a suggestion?</h3>      
+      <p class="lead">We would love to hear from you.</p>
+      <form class="needs-validation text-left" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            <div class="invalid-feedback">Required</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            <div class="invalid-feedback">Required</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="email">Email Address</label><input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+        <div class="form-group"><label for="message">Type your suggestion here.</label><textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea></div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
     </section>
 
   </div>
