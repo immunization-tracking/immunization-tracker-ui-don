@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# Immunization Tracker Marketing Page
 
-You can use the [editor on GitHub](https://github.com/immunization-tracking/immunization-tracker-ui-don/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is my first build week project and I had fun designing a marketing page from scratch.  With no UX designer in the group, I did some extra research on color theroy and leaned on the resources of Melissa Murphy, the front end architect for this project.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Here is the list of Third Party frameworks that were used in creating this website:
 
-### Markdown
+1.  [Bootstrap](https://getbootstrap.com)
+2.  [Magic CSS](https://www.minimamente.com/project/magic/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I also used [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) to create the images in the About page carousel.  
 
-```markdown
-Syntax highlighted code block
+If you are going to download this repository and make modifications, you will also need to download the bootstrap and magic source code and put that in the directories specified by the `style.scss` file.  
 
-# Header 1
-## Header 2
-### Header 3
+I want to give a huge shout out to the team that worked on the Immunization Tracker:
 
-- Bulleted
-- List
+1.  Dillion McElhinney - Team Lead
+      * [LinkedIn](https://www.linkedin.com/in/dillon-mce/)
+      * [Github](https://github.com/dillon-mce)
+      * [Twitter](https://twitter.com/d_mcelhinney)
+      * [Portfolio](https://dillon-mce.com/)
 
-1. Numbered
-2. List
+2. Yilung Weng - Back End Architect
+     * [LinkedIn](https://www.linkedin.com/in/wengellen/)
+     * [Github](https://github.com/wengyilun)
+     * [Twitter](https://twitter.com/airflowerdream)
 
-**Bold** and _Italic_ and `Code` text
+3. Melissa Murphy - Front End Architect
+     * [LinkedIn](https://www.linkedin.com/in/melissamurphy/)
+  
+4. Robert Benavidez - User Interface Designer
+     * [LinkedIn](http://www.linkedin.com/in/r-m-benavidez)
+     * [Github](https://github.com/robertbenavidez)
 
-[Link](url) and ![Image](src)
-```
+5. Donald Whitely - User Interface Designer
+     * [LinkedIn](https://www.linkedin.com/in/donwhitely/)
+     * [Github](https://github.com/dswhitely1)
+     * [Twitter](https://twitter.com/TheDonRockz)
+     * [Facebook](https://www.facebook.com/thedonrocks)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/immunization-tracking/immunization-tracker-ui-don/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
